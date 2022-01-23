@@ -8,12 +8,19 @@ public class CustomersPO extends AbstractPageObject {
     @FindBy(xpath = "//div[contains(text(), 'Customers')]")
     WebElement customersTableTitle;
 
-    public CustomersPO() {
+    @FindBy(css = ".fa-plus")
+    WebElement addCustomerButton;
 
+    public CustomersPO() {
     }
 
     public String getTableTitle() {
         return customersTableTitle.getText();
+    }
+
+    public AddCustomerPO clickAddCustomer() {
+        addCustomerButton.click();
+        return new AddCustomerPO();
     }
 
 }
