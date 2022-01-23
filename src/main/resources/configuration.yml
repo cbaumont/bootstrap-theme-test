@@ -1,6 +1,6 @@
 test-data:
   grocerycrud:
-    url: "https://www.grocerycrud.com/demo/bootstrap_theme"
+    url: "https://www.grocerycrud.com/v1.x/demo/bootstrap_theme"
 
 selenium:
   configuration:
